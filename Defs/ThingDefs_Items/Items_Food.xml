@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="MealBase">
+		<defName>MorrowRim_Scuttle</defName>
+		<label>scuttle</label>
+		<description>A greasy substance that some would describe as cheese-like, made from insect meat. Widely considered by the Dunmer to be a delicacy, though most outlanders are not particularly fond of it.</description>
+		<graphicData>
+		  <texPath>Things/Item/Meal/MorrowRim_Scuttle</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<stackLimit>10</stackLimit>
+		<statBases>
+		  <!--<MarketValue>5</MarketValue>-->
+		  <Nutrition>0.6</Nutrition>
+		</statBases>
+		<ingestible>
+		  <foodType>Meal</foodType>
+		  <preferability>MealSimple</preferability>
+		  <tasteThought>MorrowRim_AteScuttleHuman</tasteThought>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>Buyable</tradeability>
+		<comps Inherit="false">
+			<li Class="CompProperties_Forbiddable" />
+			<li Class="CompProperties_FoodPoisonable" />
+			<li Class="CompProperties_Rottable">
+				<daysToRotStart>25</daysToRotStart>
+				<rotDestroys>true</rotDestroys>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>AshlandCommon</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

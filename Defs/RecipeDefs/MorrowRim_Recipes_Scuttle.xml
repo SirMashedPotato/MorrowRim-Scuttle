@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RecipeDef>
+		<defName>MorrowRim_CraftScuttle</defName>
+		<label>make scuttle</label>
+		<description>Make 10 servings of scuttle from insect meat.</description>
+		<jobString>Making scuttle.</jobString>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<workAmount>500</workAmount>
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>Meat_Megaspider</li>
+			  </thingDefs>
+			</filter>
+			<count>4</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Meat_Megaspider</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+		  <categories>
+			<li>Foods</li>
+		  </categories>
+		</defaultIngredientFilter>
+		<products>
+		  <MorrowRim_Scuttle>10</MorrowRim_Scuttle>
+		</products>
+		<workSkill>Cooking</workSkill>
+		<researchPrerequisite>MorrowRim_AshCuisine</researchPrerequisite>
+		<skillRequirements>
+		  <Cooking>3</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	
+</Defs>

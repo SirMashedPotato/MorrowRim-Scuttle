@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Achievements Expanded</li>
+		</mods>
+
+		<match Class="PatchOperationSequence">
+			<operations>
+
+
+				<li Class="PatchOperationAdd"> 
+					<xpath>/Defs</xpath>
+					<value>
+
+						<AchievementsExpanded.AchievementTabDef>
+							<defName>MorrowRim_AchievementsTab</defName>
+							<label>MorrowRim</label>
+						</AchievementsExpanded.AchievementTabDef>
+						
+						<AchievementsExpanded.AchievementDef>
+							<defName>MorrowRim_AchievementCraftScuttle</defName>
+							<label>Now You're Cooking With Insect Meat</label>
+							<description>Craft 200 servings of scuttle</description>
+							<bgtexPath>Achievements/MorrowRim_AchievementBackground</bgtexPath>
+							<tab>MorrowRim_AchievementsTab</tab>
+							<tracker Class="AchievementsExpanded.ItemCraftTracker">
+								<def>MorrowRim_Scuttle</def>
+								<count>200</count>
+							</tracker>
+
+							<texPath>Achievements/MorrowRim_AchievementCraftScuttle</texPath>
+							<points>15</points>
+						</AchievementsExpanded.AchievementDef>
+
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+
+
+</Patch>
+

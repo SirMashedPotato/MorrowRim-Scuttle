@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThoughtDef>
+    <defName>MorrowRim_AteScuttleHuman</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate scuttle</label>
+        <description>I just don't understand what the Dunmer like about this.</description>
+        <baseMoodEffect>-1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
