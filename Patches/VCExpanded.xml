@@ -18,7 +18,7 @@
 					<ThingDef ParentName="RoughPlantBase">
 						<defName>VCE_ScuttlePaste</defName>
 						<label>scuttle paste</label>
-						<description>Scuttle mixed into a thick paste, known to reduce fatigue gain in those that consume it. One should be careful when cooking with scuttle paste, as excessive ingestion can increase blood pressure.</description>
+						<description>Scuttle mixed into a thick paste, known to reduce fatigue gain in those that consume it.</description>
 						<graphicData>
 							<texPath>Things/Item/Resource/MorrowRim_ScuttlePaste</texPath>
 							<graphicClass>Graphic_StackCount</graphicClass>
@@ -60,13 +60,6 @@
 								<baseMoodEffect>-1</baseMoodEffect>
 							</li>
 						</stages>
-						<modExtensions>
-							<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-								<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
-								<partToAffect>Body</partToAffect>
-								<percentage>0.03</percentage>
-							</li>
-						</modExtensions>
 					</ThoughtDef>
 				</value>
 			</li>
