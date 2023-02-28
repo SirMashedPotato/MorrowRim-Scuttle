@@ -13,7 +13,7 @@
 			<!-- moon sugar -->
 			
 			<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 				<value>
 					<ThingDef ParentName="RoughPlantBase">
 						<defName>VCE_ScuttlePaste</defName>
@@ -46,7 +46,7 @@
 			<!-- thought -->
 			
 			<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 				<value>
 					<ThoughtDef>
 						<defName>VCE_ConsumedScuttlePaste</defName>
@@ -67,7 +67,7 @@
 			<!-- hediff -->
 			
 			<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 				<value>
 					<HediffDef>
 						<defName>VCE_ConsumedScuttlePaste</defName>
@@ -99,7 +99,7 @@
 			<!-- recipe -->
 			
 			<li Class="PatchOperationAdd">
-			<xpath>/Defs</xpath>
+			<xpath>Defs</xpath>
 				<value>
 					<RecipeDef>
 						<defName>VCE_ScuttlePaste</defName>
@@ -147,7 +147,7 @@
 					<operations>
 					
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs</xpath>
+							<xpath>Defs</xpath>
 								<value>
 									<ThoughtDef>
 										<defName>VCE_ConsumedScuttlePasteDunmer</defName>
@@ -207,7 +207,7 @@
 					<operations>
 					
 						<li Class="PatchOperationAdd">
-							<xpath>/Defs</xpath>
+							<xpath>Defs</xpath>
 								<value>
 									<ThoughtDef>
 										<defName>VCE_ConsumedScuttlePasteDunmer</defName>
@@ -221,19 +221,12 @@
 												<baseMoodEffect>1</baseMoodEffect>
 											</li>
 										</stages>
-										<modExtensions>
-											<li Class="VanillaCookingExpanded.Thought_Hediff_Extension">
-												<hediffToAffect>VCE_HighBloodPressure</hediffToAffect>
-												<partToAffect>Body</partToAffect>
-												<percentage>0.03</percentage>
-											</li>
-										</modExtensions>
 									</ThoughtDef>
 								</value>
 							</li>
 						
 						<li Class="PatchOperationAdd"> 
-							<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ESCP_BaseDunmerRace"]/alienRace/thoughtSettings/replacerList</xpath>
+							<xpath>/Defs/AlienRace.ThingDef_AlienRace[@Name="ESCP_BaseRace_Dunmer"]/alienRace/thoughtSettings/replacerList</xpath>
 							<value>
 								<li>
 									<original>VCE_ConsumedScuttlePaste</original>
